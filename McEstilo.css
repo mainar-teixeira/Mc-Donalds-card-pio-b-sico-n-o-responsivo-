@@ -1,0 +1,311 @@
+/*--DEF_INÍCIAL--*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 900px;
+}
+
+/*--BARRA_LOGO_&_MENU--*/
+
+.ground {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.87);
+    padding: 5px;
+}
+
+.barra {
+    position: relative;
+    background-color: red;
+    padding: 120px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.barra p {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 12px;
+}
+
+.icn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 170px;
+}
+
+/*--BARRA_CATEGORIA--*/
+
+.BarCat {
+    position: relative;
+    margin-top: 15px;
+    /*border: 1px solid black;*/
+    height: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.cats {
+    display: flex;
+    position: relative;
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cat:first-child {
+    margin-left: 0px;
+}
+
+.cat {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    margin-left: 35px;
+    /*border: 1px solid black;*/
+   /* overflow: hidden;*/
+}
+
+.icn1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.icn1:hover {
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+
+@font-face {
+    font-family: Robot-font;
+    src: url(Italiana,Roboto/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+.legendas {
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    /*border: 1px solid black;*/
+    height: 75px;
+}
+
+.lgn:first-child {
+    margin-left: 35px;
+}
+
+.lgn {
+    position: relative;
+    margin-left: 15px;
+    text-align: center;
+    font-family: Robot;
+}
+
+#lgn1 {
+    visibility: hidden;
+}
+
+#lgn2 {
+    visibility: hidden;
+}
+
+#lgn3 {
+    visibility: hidden; 
+    margin-left: -38px;
+}
+
+#lgn4 {
+    visibility: hidden;
+}
+
+#lgn5 {
+    visibility: hidden;
+    margin-left: 25px;
+}
+
+#lgn6 {
+    visibility: hidden;
+    margin-left: 40px;
+}
+
+#lgn7 {
+    visibility: hidden;
+    margin-left: 50px;
+}
+
+#lgn8 {
+    visibility: hidden;
+    margin-left: 50px;
+}
+
+/*--LAYOUTS--*/
+
+
+.legenda {
+    position: relative;
+    margin-left: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.layout {
+    position: relative;
+    height: 270px;
+    border: 1px solid black;
+    /*background-image: linear-gradient(0deg,rgb(0, 0, 0) -100%, rgb(255, 255, 255) 100%, rgb(0, 0, 0) 150%);*/
+    background-color: rgb(194, 194, 194);
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: scroll;
+}
+
+.layLancamentos {
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(0, 255, 0);
+    width: 12960px;
+    height: 100%;
+    z-index: 2;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+
+
+.lyL {
+    position: relative;
+    margin-left: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    width: 200px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.image {
+    background-color: rgb(235, 235, 235);
+   /* border: 1px solid rgb(4, 0, 255);*/
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+p {
+    font-family: Robot-font;
+}
+
+.img1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.lgn1 {
+    text-align: center;
+    
+}
+
+.lgn2 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 95%;
+    top: 95%;
+    transform: translate(-90%, -95%);
+    margin-top: 5px;
+    color: blue;
+    width: 100%;
+}
+
+.lyL:hover {
+    transition: 0.3s;
+    transform: scale(1.02);
+    transform-origin: bottom center;
+}
+
+#lyN {
+    color: red;
+}
+
+#lyB {
+    color: brown;
+}
+
+#lyT {
+    color: purple;
+}
+
+#lyF {
+    color: orange;
+}
+
+#lyM {
+    color: green;
+}
+
+#lyA {
+    color: rgb(255, 115, 0);
+}
+
+/*#lyL1 {
+    display: none;
+}
+
+#lyN1 {
+    display: none;
+}
+
+#lyB1 {
+    display: none;
+}
+
+#lyT1 {
+    display: none;
+}
+
+#lyF1 {
+    display: none;
+}
+
+#lyM1 {
+    display: none;
+}
+
+#lyA1 {
+    display: none;
+}*/
+
+.aparecer {
+    display: block;
+}
+
+.desaparecer {
+    display: none;
+}
+
